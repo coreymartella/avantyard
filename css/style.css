@@ -1,0 +1,191 @@
+body{
+	padding:0;
+
+	/* fallback */
+/*	background-color: #8DC540;*/
+
+	/* Safari 4-5, Chrome 1-9 */
+	/* Can't specify a percentage size? Laaaaaame. */
+/*	 background: -webkit-gradient(radial, center center, 0, center center, 460, from(#8DC540), to(#009447));*/
+
+	/* Safari 5.1+, Chrome 10+ */
+/*	background: -webkit-radial-gradient(circle, #8DC540, #009447);*/
+
+	/* Firefox 3.6+ */
+/*	background: -moz-radial-gradient(circle, #8DC540, #009447);*/
+
+	/* IE 10 */
+/*	background: -ms-radial-gradient(circle, #8DC540, #009447);*/
+
+}
+
+.container{
+	max-width: 940px;
+	padding:20px 10px 0 10px;
+	background-color: white;
+}
+
+#logo{
+	z-index:1040;
+	position: relative;
+}
+
+.nav{
+	float: right !important;
+}
+
+/*.brand{
+	float: right !important;
+}*/
+
+.row-fluid{
+	margin-top: 40px;
+}
+
+#header{
+	margin-top:0;
+}
+
+.carousel-caption{
+		background-color: rgba(16, 27, 17, .75);
+}
+
+.carousel-caption h3{
+	color:white;
+	font-weight: bold;
+}
+
+/* Creates a fade in for carousel */
+.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+
+ul{
+	list-style-type: square;
+}
+
+.img-polaroid{
+	display: block;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;
+}
+
+.lead{
+	color:#006738;
+}
+
+h2{
+	color: #8DC540 !important;
+	color: rgb(141, 198, 66) !important;
+}
+
+form{
+	background-color: #eee;
+	padding:8px;
+	border-radius:4px;
+}
+
+#footer{
+	margin:0 auto;
+}
+
+#footer ul{
+	list-style-type: none;
+	margin: 0;
+}
+
+#footer ul li{
+	float: left;
+	width:33.3333%;
+	text-align: center;
+	padding:15px 0;
+}
+
+#footer ul li:nth-child(1){
+	text-align: left;
+}
+
+#footer ul li:nth-child(3){
+	text-align: right;
+}
+
+.btn{
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#8CC63E));
+	background-color: #8CC63E;
+}
+
+.btn:hover{
+		background-color: #8CC63E;
+}
+
+.notes{
+	text-align: center;
+	font-style: italic;
+	font-size: .8em;
+	line-height: 2em;
+}
+
+/* TABLET AND PHONE ++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+
+@media (max-width: 767px) {
+	
+
+.navbar-inner{
+	margin-top:20px;
+}
+
+}
+
+@media (max-width: 480px){
+
+#logo{
+	display: block;
+	margin:0 auto;
+}
+
+#footer li{
+	float: left;
+	clear: left;
+	width: 100% !important;
+}
+
+}
+/* NAVIGATION +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (min-width: 767px) and (max-width: 979px){
+
+#myicon, .brand{
+	display:none !important;
+}
+
+.nav-collapse, .nav-collapse.collapse{
+	overflow:auto;
+	height: auto;
+}
+
+.nav, .nav li{
+	float: left !important;
+}
+
+.nav a{
+	font-size:14px;
+	font-weight: normal !important;
+}
+
+}
+
+
+/* DESKTOP +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media (min-width: 768px){
+
+.navbar-inner{
+	border: none;
+	background-color: white;
+	background-image: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+}
